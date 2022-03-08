@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/reset.css">
-    <script defer src="main.js"></script>
-    <title>main</title>
+    <script defer src="js/main.js"></script>
+    <title>음메~인</title>
 </head>
 <body>
     <section class="cont">
@@ -32,116 +32,148 @@
          </div>
         </nav>
         <main class="contMain">
-            <div class="feeds">
-                <article class="article">
-                    <header>
-                        <div>
-                            <img src="src/basic-profile-img.png" alt="프로필 사진">
-                            <span>a.orazy_sudnics</span>
+            <section class="mainBox">
+                <div class="feed">
+                    <article class="article">
+                        <header>
+                            <div>
+                                <img src="src/basic-profile-img.png" alt="프로필 사진">
+                                <span>a.orazy_sudnics</span>
+                            </div>
+                        </header>
+                        <div class="imgBox">
+                            <img src="src/userimg.webp" alt="" class="userImg">
                         </div>
-                    </header>
-                    <div>
-                        <img src="src/chat-exapmle.png" alt="">
-                    </div>
-                    <div class="iconBox">
-                        <div>
-                            <img src="src/heart.png" alt="">
-                            <img src="src/comment.svg" alt="">
-                            <img src="src/message-solid.svg" alt="">
+                        <div class="iconBox">
+                            <div class="icon">
+                                <img src="src/heart.png" alt="" >
+                                <img src="src/comment.svg" alt="">
+                                <img src="src/message-solid.svg" alt="" class="messIcon">
+                            </div>
+                            <div class="save">
+                                <img src="src/bookmark-solid.svg" alt="" class="saveIcon">
+                            </div>
                         </div>
-                        <div>
-                            <img src="src/bookmark-solid.svg" alt="">
+                        <div class="likeBox">
+                            <p>좋아요 2,798,294개</p>
+                            <p>a.orazy_sudnics 🍀</p>
                         </div>
-                    </div>
-                    <div>
-                        <img src="" alt="">
-                        <p>좋아요 2,798,294개</p>
-                    </div>
-                    <div class="commentBox">
 
-                    </div>
-                    <div>
-                        <input type="text" placeholder="댓글달기...">
-                        <button>게시</button>
-                    </div>
-                </article>
-            </div>
-            <aside class="aside">
-                <div>
-                    <img src="src/profile.png" alt="">
-                    <span>a.orazy_sudnics</span>
+                        <div class="timeBox">
+                            <span>10분전</span>
+                        </div>
+                        <!-- 댓글 창  -->
+                        <div class="commentBox">
+                           <div class="innerBox">
+                                <div class="comment">댓글 달거야!!!!!</div>
+                                <img src="src/heart.png" alt="">
+                           </div>
+                           <div class="innerBox">
+                            <div class="comment">댓글 달거야!!!!!</div>
+                            <img src="src/heart.png" alt="">
+                       </div>
+
+                            <div class="moreIconBox">
+                                <img src="src/moreicon.svg" alt="더보기">
+                            </div>
+                        </div>
+
+                        <!-- 댓글 기능 구현하기  -->
+                        <div class="commentInpBox">
+                           <form class="innerBox">
+                                <input class="inpComment" type="text" placeholder="댓글달기...">
+                                <button class="btnSave">게시</button>
+                           </form>
+                        </div>
+                    </article>
                 </div>
-                <div class="storyForm">
-                    <div class="header">
-                        <span>스토리</span>
-                        <span>모두 보기</span>
+                <aside class="aside">
+                    <div class="myProfile">
+                        <img src="src/basic-profile-img.png" alt="">
+                        <span>a.orazy_sudnics</span>
                     </div>
-                    <div class="storyList">
-                        <div>
-                            <img src="src/profile.png" alt="">
-                            <span>a.orzy</span>
-                            <span>10분전</span>
+                    <div class="storyForm">
+                        <div class="header">
+                            <span>스토리</span>
+                            <span>모두 보기</span>
                         </div>
-                        <div>
-                            <img src="src/profile.png" alt="">
-                            <span>a.orzy</span>
-                            <span>10분전</span>
-                        </div>
-                        <div>
-                            <img src="src/profile.png" alt="">
-                            <span>a.orzy</span>
-                            <span>10분전</span>
-                        </div>
-                        <div>
-                            <img src="src/profile.png" alt="">
-                            <span>a.orzy</span>
-                            <span>10분전</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="recomBox">
-                    <div class="header">
-                        <span>회원님을 위한 추천</span>
-                        <span>모두 보기</span>
-                    </div>
-                    <div class="storyList">
-                        <div>
-                            <div><img src="src/profile.png" alt=""></div>
-                            <div>
-                                <span>a.orzy</span>
-                                <span>10분전</span>
+                        <div class="storyList">
+                            <div class="storyItem">
+                                <img src="src/basic-profile-img.png" alt="">
+                                <div class="right">
+                                    <span>a.orzy</span>
+                                    <span>10분전</span>
+                                </div>
                             </div>
-                            <div>팔로우</div>
-                        </div>
-                        <div>
-                            <div><img src="src/profile.png" alt=""></div>
-                            <div>
-                                <span>a.orzy</span>
-                                <span>10분전</span>
+                            <div class="storyItem">
+                                <img src="src/basic-profile-img.png" alt="">
+                                <div class="right">
+                                    <span>a.orzy</span>
+                                    <span>10분전</span>
+                                </div>
                             </div>
-                            <div>팔로우</div>
-                        </div>
-                        <div>
-                            <div><img src="src/profile.png" alt=""></div>
-                            <div>
-                                <span>a.orzy</span>
-                                <span>10분전</span>
+                            <div class="storyItem">
+                                <img src="src/basic-profile-img.png" alt="">
+                                <div class="right">
+                                    <span>a.orzy</span>
+                                    <span>10분전</span>
+                                </div>
                             </div>
-                            <div>팔로우</div>
-                        </div>
-                        <div>
-                            <div><img src="src/profile.png" alt=""></div>
-                            <div>
-                                <span>a.orzy</span>
-                                <span>10분전</span>
+                            <div class="storyItem">
+                                <img src="src/basic-profile-img.png" alt="">
+                                <div class="right">
+                                    <span>a.orzy</span>
+                                    <span>10분전</span>
+                                </div>
                             </div>
-                            <div>팔로우</div>
                         </div>
                     </div>
-                </div>
-                <div></div>
-                <div></div>
-            </aside>
+                    <div class="recomBox">
+                        <div class="header">
+                            <span>회원님을 위한 추천</span>
+                            <span>모두 보기</span>
+                        </div>
+                        <div class="storyList">
+                            <div class="storyItem">
+                                <div><img src="src/basic-profile-img.png" alt=""></div>
+                                <div class="right">
+                                    <span>a.orzy</span>
+                                    <span>10분전</span>
+                                </div>
+                                <div class="follow">팔로우</div>
+                            </div>
+                            <div class="storyItem">
+                                <div><img src="src/basic-profile-img.png" alt=""></div>
+                                <div class="right">
+                                    <span>a.orzy</span>
+                                    <span>10분전</span>
+                                </div>
+                                <div class="follow">팔로우</div>
+                            </div>
+                            <div class="storyItem">
+                                <div><img src="src/basic-profile-img.png" alt=""></div>
+                                <div class="right">
+                                    <span>a.orzy</span>
+                                    <span>10분전</span>
+                                </div>
+                                <div class="follow">팔로우</div>
+                            </div>
+                            <div class="storyItem">
+                                <div><img src="src/basic-profile-img.png" alt=""></div>
+                                <div class="right">
+                                    <span>a.orzy</span>
+                                    <span>10분전</span>
+                                </div>
+                                <div class="follow">팔로우</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <p>Instagram 정보 소개 도움말 홍보 센터 API 채용 정보 개인 정보 처리 방침 약관 위치 인기 계정 해시태그 언어</p>
+                        <p>© 2022 INSTAGRAM FROM META</p>
+                    </div>
+                </aside>
+            </section>
         </main>
     </section>
     
