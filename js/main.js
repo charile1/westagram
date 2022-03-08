@@ -5,7 +5,7 @@ console.log(btnSave)
 const commentBox = document.querySelector(".commentBox")
 console.log(commentBox)
 const form = document.querySelector('form');
-let itemsArray = localStorage.getItem('items')?JSON.parse(localStorage.getItem('items')):[];
+// let itemsArray = localStorage.getItem('items')?JSON.parse(localStorage.getItem('items')):[];
 
 // localStorage.setItem('items',JSON.stringify(itemsArray));
 // const data = JSON.parse(localStorage.getItem('items'));
@@ -20,7 +20,7 @@ const listMaker = (text) => {
 form.addEventListener('submit', (e) => {
     e.preventDefault(); 
     itemsArray.push(input.value);
-    localStorage.setItem('items',JSON.stringify(itemsArray));
+    // localStorage.setItem('items',JSON.stringify(itemsArray));
     listMaker(input.value); // input 값을 받아온다 
     input.value="";  // input은 다시 공백으로 만들기 
 });
