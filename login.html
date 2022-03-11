@@ -7,18 +7,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/common.css">
     <link rel="stylesheet" href="style/login.css">
+    <script defer src="js/login.js"></script>
     <title>login</title>
 </head>
 <body>
     <section class="section">
-        <h1 class="title">Instagram</h1>
+        <h1 class="title">Westagram</h1>
         <div>
-            <form class="form">
-                <input class="inpID" type="text" placeholder="전화번호, 사용자 이름 또는 이메일 ">
+            <form class="formLogin">
+                <input class="inpID" type="text" placeholder="이메일">
+                <p class="inputAlert"></p>
                 <input class="inpPass"type="password" placeholder="비밀번호">
-                <button class="btnLogin">로그인</button>
-                <a class="goToLink" href="#none">비밀번호를 잊으셨나요?</a>
+                <p class="inputPassAlert"></p>
+                <button type="button" class="btnLogin off" >로그인</button>
+                <a class="goToLink" href="javascript:void(0)">비밀번호를 잊으셨나요?</a>
             </form>
         </div>
     </section>
