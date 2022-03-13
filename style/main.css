@@ -1,13 +1,3 @@
-/* body {
-    background-color: #FAFAFA;
-}
-
-button {
-    cursor: pointer;
-} */
-
-
-
 .iconBox img, .head img {
     width: 30px;
 }
@@ -394,13 +384,6 @@ button {
 }
 
 .modalOverlay {
-    /* width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    z-index: 10; */
     width: 100%;
     height: 100%;
     position: absolute;
@@ -415,15 +398,9 @@ button {
     align-items: center;
 }
 
-/* .modalInnerBox {
-    position: relative;
-    height: 100px;
-} */
-
 .modalBox {
     position: absolute;
     top: 3.5rem;
-    /* right: -2.75rem; */
     right: 11.5rem;
     width: 14rem;
     height: 13rem;
@@ -448,7 +425,6 @@ button {
 }
 
 .modalBox .item {
-    /* border: 1px solid; */
     padding: 5px;
     display: flex;
     align-items: center;
@@ -458,8 +434,6 @@ button {
     border-top: 1px solid #dbdbdb;
 }
 
-
 .modalBox .item img {
-    /* padding-right: 1rem; */
     margin-right: 8px;
 }
